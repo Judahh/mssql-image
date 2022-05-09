@@ -1,5 +1,6 @@
 FROM mcr.microsoft.com/mssql/server:latest
 
+ENV INSTANCE tcp:127.0.0.1
 ENV DATABASE_NAME read_DB
 ENV SA_PASSWORD yourStrong(!)Password
 ENV ACCEPT_EULA Y
