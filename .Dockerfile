@@ -13,7 +13,7 @@ USER root
 # RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - && \
 #     curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list > /etc/apt/sources.list.d/msprod.list
 
-RUN apt update && apt install -y unzip bash mssql-tools
+RUN apt update && apt install -y mssql-tools
 
 RUN mkdir -p /usr/src/app
 
